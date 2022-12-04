@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Whaler's Pocket</title>
+    <meta name="author" Ikhwan Zaky />
+    
+    <!-- link css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- link CDNJS Fonts awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body{
+            font-family:,Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        body{background-color: rgb(31, 30, 30);
+        }
+    </style>
+
+</head>
+<body>
+<!-- navabar -->
+<section id="navbar">
+    <nav class="navbar navbar-expand-lg bg-secondary sticky-sm-top">
+             <div class="container-fluid">
+                <div class="logo float-start">
+                    <a class="navbar-brand" href="#">
+                            <img src="asset/img/logo_navbar.png" alt="logo" height="50" class="d-inline-block">
+                            <h1 class="mt-2 text-center text-light" style="display:inline-block;">Whaler's Pocket</h1>
+                    </a>
+                </div>
+        <!-- tombol navbar -->
+        <button class="navbar-toggler bg-dark text-dark my-1 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="#benefit">Benefits</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">Product and Sample</a>
+                </li>
+        <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More</a>
+                    <ul class="dropdown-menu bg-secondary">
+                        <li><a class="dropdown-item" href="#support">Support</a></li>
+                        <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#contact">Contacts</a></li>
+                    </ul>
+                </li>
+        <hr>
+        <!-- login/register -->
+            <li class="nav-item">
+                <a class=" btn btn-dark" data-bs-toggle="modal" data-bs-target="#modal_login" href="#"> Login/Register</a>
+            </li>
+            </ul>
+            </div>
+            </div>
+    </nav>
+</section>
+<!-- end of navbar -->
+<!-- jumbotron(#home) -->
+<section id="jumbotron" class="text-light ">
+    
+    <div class="jumbotron jumbotron-fluid m-4" id="">
+        <div class="container-fluid">
+            <h1 class="display-4">Welcome, new Whaler</h1>
+            <p class="lead"><em>Plan ahead your bussiness with demandable and great quality product for your online shops. Whalers for life!!</em></p>
+<!-- alert button -->
+            <div class="alert alert-success visually-hidden" role="alert">
+                A simple success alert—check it out!
+              </div>
+            <div id="livealertWhale"></div>
+                <button type="button" class="btn btn-secondary btn-sm" id="whale_ahoy">Whale Ahoy!</button>
+        </div>
+    </div>   
+</section>
+<!-- end of jumbotron -->
+<!-- carousel(#benefit) -->
+<section id="benefit">
+       <!-- slideshow -->
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide justify-content-center m-4"
+          data-bs-ride="false">
+        <!-- slide 1 -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <!-- slide 2 -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="asset/img/1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h5>Modern housewares</h5>
+                <p>Cool and stylish home appliance</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="asset/img/2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h5>Budget Smartphone</h5>
+                <p>Budget goods for budget wallet kids</p>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="carousel-item">
+              <img
+                src="asset/img/3.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption">
+                <h5>Brand New Smartphones</h5>
+                <p>New smartphone for your fancy ass costumers</p>
+              </div>
+            </div>
+          </div>
+        <!-- tombol next/back -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <hr>
+        <hr class="text-light">
+      </section>
+<!-- end of carousel -->
+<!-- cards(#product) -->
+<section id="product" class="m-4">
+    <span class="row justify-content-center">
+        <h3 class="text-center text-light">Products and Samples</h3>
+        <div class="card col-sm-3 bg-secondary my-1">
+            <img src="../your_product_web/asset/img/c1.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-light">Mercedes</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sit quos dolores nisi possimus maiores.</p>
+                <a href="#" class="btn btn-sm btn-dark">Check</a>
+            </div>
+        </div>
+        <div class="card col-sm-3 bg-secondary my-1">
+            <img src="../your_product_web/asset/img/c2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-light">Ferrari</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sit quos dolores nisi possimus maiores.</p>
+                <a href="#" class="btn btn-sm btn-dark">Check</a>
+            </div>
+        </div>
+        <div class="card col-sm-3 bg-secondary my-1">
+            <img src="../your_product_web/asset/img/c3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-light">AUDI</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sit quos dolores nisi possimus maiores.</p>
+                
+                <a href="#" class="btn btn-sm btn-dark">Check</a>
+            </div>
+        </div>
+        <div class="card col-sm-3 bg-secondary my-1">
+            <img src="../your_product_web/asset/img/c4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-light">BMW</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sit quos dolores nisi possimus maiores.</p>
+                <a href="#" class="btn btn-sm btn-dark">Check</a>
+            </div>
+        </div>
+    </span>
+    <hr class="text-light">
+</section>
+<!-- end of cards product-->
+<!-- Form(#Support) -->
+<section id="support">
+    <h3 class="text-center text-light mb-4">Supports</h3>
+    <div class="container col-8 bg-secondary p-4">
+        <div class="mb-2 row justify-content-center">
+            <label for="email_support" class="form-label text-light">Email address</label>
+            <input type="email" class="form-control" id="email_support" placeholder="youremail@example.com">
+        </div>
+        <div class="mb-3 row justify-content-center">
+            <label for="keluh_kesah" class="form-label text-light ">Tell us something</label>
+            <textarea class="form-control" id="keluh_kesah" rows="3" placeholder="your problems or something you wanna ask for?"></textarea>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-dark" type="button">Submit</button>
+        </div>
+    </div>
+    <hr class="text-light">
+</section>
+<!-- end of form support -->
+<!-- Accordion (#FAQ) -->
+<section id="faq">
+    <h3 class="text-light text-center m-4">FAQ</h3>
+    <div class="row p-2 mx-1">
+        <div class="col-6 accordion accordion-flush" id="accordionFlushExample">
+        <!-- item1 -->
+        <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Why become a whaler?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis expedita, exercitationem mollitia nam esse natus aut aperiam? Consequuntur, ducimus dicta. Provident aliquid ullam quam rerum?.</div>
+              </div>
+            </div>
+            <!-- item2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Where can i purchase my sertificate of Whale?
+                    </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, illum dolores. Laudantium obcaecati sunt similique.</div>
+              </div>
+            </div>
+            <!-- item3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        How much spending for someone called Whale?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam et blanditiis est in, id libero quo tempore cum vero ad, suscipit quos voluptas distinctio enim.</div>
+                </div>
+            </div>
+        </div>
+        <div class=" col-6">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- item4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Can the products shipped to my country
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nostrum sapiente labore explicabo doloremque nihil laborum tempora, minus facere odio optio consectetur deleniti? Ex illum quisquam dolorum natus laboriosam dignissimos!</div>
+                </div>
+            </div>
+            <!-- item5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                        What kind of payment do Whaler's Pocket accept?
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sapiente odit cum corporis optio at nisi eum sequi hic laudantium repudiandae dicta molestias quia, explicabo ipsa quam magni aliquam rem ab facilis sunt! Corrupti placeat dicta est tempore ipsa atque.</div>
+                </div>
+            </div>
+            <!-- item6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed text-light bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                        Can everybody stop calling me Whale?
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo repudiandae cupiditate alias repellat temporibus non..</div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<hr class="text-light">
+</section>
+<!-- end of accordion -->
+<!-- contact -->
+<section id="contact" class="text-center">
+    <p class="text-secondary">&copy;Copyright 2022 Ikhwan Zaky</p>
+        <span class="">
+            <!-- youtube -->
+            <a href="https://m.youtube.com/channel/UCTbwrOfrm5UK4jA81osquXg"><i class="fa-brands fa-youtube link-light"> </i></a>
+            <!-- whatsapp -->
+            <a href="https://wa.me/089674044363"> <i class="fa-brands fa-whatsapp link-light"></i></a>
+            <!-- facebook -->
+            <a href="https://www.facebook.com/ikhwan.zaky"><i class="fa-brands fa-facebook-f link-light"></i></a>
+            <!-- instagram -->
+            <a href="https://www.instagram.com/ikhwanzaky/"><i class="fa-brands fa-instagram link-light"></i></a>
+        </span>
+        <br>
+        <hr>
+</section>
+<!-- end of contact -->
+<!-- modal login-->
+<div class="modals">
+    <div class="modal fade opacity-90" id="modal_login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"   aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-dark">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Login/Register</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!-- pills tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="login_tab" data-bs-toggle="tab" data-bs-target="#tab-login" type="button" role="tab" aria-controls="tab-login" aria-selected="true">Login</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="register_tab" data-bs-toggle="tab" data-bs-target="#tab-register" type="button" role="tab" aria-controls="register-tab-pane" aria-selected="false">Register</button>
+            </li>
+        </ul>
+        
+          <!-- pills tabs content -->
+          <div class="tab-content" id="myTabContent">
+            <!-- isi form login -->
+            <br>
+            <div class="tab-pane fade show active" id="tab-login" role="tabpanel" aria-labelledby="tab-login" tabindex="0">
+                <div class="mb-3">
+                    <label for="email1" class="form-label ">Email </label>
+                    <input type="email" class="form-control bg-secondary" id="email1"> 
+                    </div>
+                    <div class="mb-3">
+                        <label for="password1" class="form-label">Password </label>
+                        <input type="password" class="form-control bg-secondary" id="password1"></input>
+                    </div>
+                <a href=""> <button type="button"  class="btn btn-sm">Forgot password</button></a>
+            </div>
+        </div>
+        
+        <!-- isi form register -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade" id="tab-register" role="tabpanel" aria-labelledby="tab-register" tabindex="0">
+              <div class="mb-3">
+                  <label for="exampleFormControlInput2" class="form-label ">Email </label>
+                  <input type="email" class="form-control bg-secondary" id="exampleFormControlInput2">
+                </div>
+                <div class="mb-3">
+                    <label for="password2-1" class="form-label">Password </label>
+                    <input type="password" class="form-control bg-secondary" id="password2-1"></input>
+                </div>
+                <div class="mb-3">
+                    <label for="password2-2" class="form-label">Re-Password </label>
+                    <input type="password" class="form-control bg-secondary" id="password2-2"></input>
+                </div>
+            </div>
+        </div>
+        <!-- end of pills form -->
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger">Submit</button>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<!-- script JS Bootstrap -->
+<script
+src="asset/js/bootstrap.bundle.min.js">
+
+// script ALERT
+const alertPlaceholder = document.getElementById('livealertWhale')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('whale_ahoy')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('Nice, you have joined the Whaler comunity!', 'success')
+  })
+}
+</script>
+</body>
+</html>
